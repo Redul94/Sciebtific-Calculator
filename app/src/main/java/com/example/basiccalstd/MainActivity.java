@@ -66,4 +66,38 @@ public class MainActivity extends AppCompatActivity {
 //        primaryView.setText(""+result);
         primaryView.setText(result.toString());
     }
+
+    public void trigonmetryFunction(View view) {
+        int id = view.getId(); // get the ID of the button that was clicked
+
+        double input = Double.parseDouble(primaryView.getText().toString());
+        double result = 0;
+
+        if (id == R.id.sinId) {
+            result = Math.sin(Math.toRadians(input));
+        }
+        else if (id == R.id.cosId) {
+            result = Math.cos(Math.toRadians(input));
+        }
+        else if (id == R.id.tanId) {
+            result = Math.tan(Math.toRadians(input));
+        }
+
+//        else if (id == R.id.cosecId) {
+//            result = 1 / Math.sin(Math.toRadians(input));
+//        }
+//        else if (id == R.id.secId) {
+//            result = 1 / Math.cos(Math.toRadians(input));
+//        }
+//        else if (id == R.id.cotId) {
+//            result = 1 / Math.tan(Math.toRadians(input));
+//        }
+        else{
+            result=0;
+        }
+
+        primaryView.setText(Double.toString(result));
+    }
+
+
 }

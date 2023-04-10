@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="8"
+    android:weightSum="10"
     android:background="@color/black"
     tools:context=".MainActivity">
 
@@ -81,6 +81,103 @@
                 android:layout_weight="1"
                 android:textSize="30sp"
                 android:textColor="@color/white"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_700"
+
+            android:weightSum="4"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sin"
+                android:id="@+id/sinId"
+                android:onClick="trigonmetryFunction"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textColor="@color/white"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cos"
+                android:id="@+id/cosId"
+                android:textAllCaps="false"
+                android:onClick="trigonmetryFunction"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:textColor="@color/white"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tan"
+                android:id="@+id/tanId"
+                android:textAllCaps="false"
+                android:onClick="trigonmetryFunction"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:textColor="@color/white"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="log"
+                android:id="@+id/logId"
+                android:textAllCaps="false"
+                android:onClick="trigonmetryFunction"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_700"
+
+            android:weightSum="3"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cosec"
+                android:id="@+id/cosecId"
+                android:textAllCaps="false"
+                android:onClick="trigonmetryFunction"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:textColor="@color/white"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sec"
+                android:id="@+id/secId"
+                android:textAllCaps="false"
+                android:onClick="trigonmetryFunction"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:textColor="@color/white"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="cot"
+                android:id="@+id/cotId"
+                android:textAllCaps="false"
+                android:onClick="trigonmetryFunction"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:textColor="@color/white"/>
+
 
         </LinearLayout>
         <LinearLayout
