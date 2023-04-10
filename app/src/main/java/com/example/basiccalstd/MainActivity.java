@@ -68,9 +68,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void trigonmetryFunction(View view) {
-        int id = view.getId(); // get the ID of the button that was clicked
-
-        double input = Double.parseDouble(primaryView.getText().toString());
+        int id = view.getId();
+        double input; // get the ID of the button that was clicked
+        
+        try {
+            input = Double.parseDouble(primaryView.getText().toString());
+            // Process the valid input here
+        } catch (NumberFormatException e) {
+            // Display an error message to the user
+            Toast.makeText(getApplicationContext(), "Please enter a valid number", Toast.LENGTH_SHORT).show();
+        }
+        
         double result = 0;
 
         if (id == R.id.sinId) {
